@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	<meta charset="utf-8" />
+	
+	<script type="text/javascript">
+	
+		function kmnacm()
+		{
+			var km = document.getElementById("km").value;
+			
+			document.getElementById("wynik").innerHTML=km*100000;
+		
+		}
+
+        function cmnakm()
+        {
+            var cm = document.getElementById("cm").value;
+
+            document.getElementById("w").innerHTML=cm*0.00001;
+        }
+	
+	</script>
+    
+</head>
+
+<body>
+    <h2>Przelicz kilometry na centymetry</h2>
+	<input type="text" id="km" />
+	<input type="submit" value="Przelicz" onclick="kmnacm()"/>
+	
+	<div id="wynik"></div>
+    <br/>
+    <h2>Przelicz centymetry na kilometry</h2>
+    <input type="text" id="cm"/>
+    <input type="submit" value="Przelicz" onclick="cmnakm()">
+    <div id="w"></div>
+
+</body>
+
+</html>
